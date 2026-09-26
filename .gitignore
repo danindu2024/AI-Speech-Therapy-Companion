@@ -1,3 +1,169 @@
+# ==============================================================================
+# AI-Powered Speech Therapy Companion - .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Project-Specific & Private Career Notes
+# ------------------------------------------------------------------------------
 career-mentoring-guide.md
 career-mentoring-guide v2.md
+career-mentoring-guide*.md
 Pilot document.md
+flagship-project-tracker*.md
+*.tmp.md
+
+# ------------------------------------------------------------------------------
+# 2. Environment Variables, Secrets & Credentials (NEVER COMMIT)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.cert
+*.crt
+credentials.json
+client_secret*.json
+aws-credentials/
+.aws/
+
+# ------------------------------------------------------------------------------
+# 3. Node.js & Frontend (React + Vite)
+# ------------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+dist/
+dist-ssr/
+build/
+.next/
+out/
+.cache/
+.vite/
+.parcel-cache/
+.turbo/
+.eslintcache
+
+# ------------------------------------------------------------------------------
+# 4. Python & AWS Lambda Backend
+# ------------------------------------------------------------------------------
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Poetry / Pipenv
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+pip-wheel-metadata/
+
+# ------------------------------------------------------------------------------
+# 5. Cloud & Serverless Infrastructure (AWS SAM / CDK / Serverless)
+# ------------------------------------------------------------------------------
+.aws-sam/
+.serverless/
+.terraform/
+*.tfstate
+*.tfstate.*
+cdk.out/
+cdk.context.json
+
+# ------------------------------------------------------------------------------
+# 6. Audio Recordings, Datasets & AI Model Artifacts
+# ------------------------------------------------------------------------------
+# Audio test files & patient voice recordings (HIPAA / Privacy & Size)
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.webm
+*.flac
+recordings/
+uploads/
+audio_samples/
+test_audio/
+
+# ML weights, checkpoints and caches
+*.pt
+*.pth
+*.onnx
+*.bin
+*.h5
+*.tflite
+models/checkpoints/
+models/weights/
+.cache/huggingface/
+.cache/whisper/
+
+# ------------------------------------------------------------------------------
+# 7. Testing, Code Coverage & Logs
+# ------------------------------------------------------------------------------
+logs/
+*.log
+coverage/
+.nyc_output/
+htmlcov/
+.coverage
+.coverage.*
+
+# ------------------------------------------------------------------------------
+# 8. Operating System & Editor Files
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Linux
+*~
+
+# IDEs & Editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
